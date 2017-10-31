@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Node module css imports*/
+@import 'normalize.css/normalize.css';
+@import 'hamburgers/dist/hamburgers.css';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+/*Site specific css imports*/
+@import 'partials/old.css';
+@import 'partials/defaults.css';
+@import 'partials/contact.css';
+@import 'partials/layout.css';
+@import 'partials/gallery.css';
+@import 'partials/page.css';
+@import 'partials/footer.css';
+@import 'partials/banner.css';
+
+/*CSS Variable declarations*/
+:root {
+  /*--dark-grey:#777777;*/
+}
+
+/*Breakpoints for postcss-custom-media*/
+/*@custom-media --desktop-up (min-width:1100px);*/

@@ -1,0 +1,65 @@
+.page-body{
+  min-height: 80vh;
+}
+
+main{
+    padding-bottom: 3em;
+    min-height: 94vh;
+}
+
+.content{
+    min-height: 80vh;
+    margin-bottom: 3em;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+#center{
+  float: none;
+}
+
+.textRight{
+  text-align: right;
+}
+
+
+h1 {
+  margin: 1em 0em 0em 0em;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.bold{
+    font-style: bold;
+}
+
+@media(max-width: 1000px){
+    .page-body{
+        min-height: 160vh;
+    }
+}
+
+@media(max-width: 750px){
+    .page-body{
+        min-height: 120vh;
+    }
+}
+
+@media(max-width: 550px){
+    .page-body{
+        min-height: 110vh;
+    }
+}
+
+@media(max-width: 850px){
+    .content{
+        min-height: 120vh;
+    }
+}

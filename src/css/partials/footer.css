@@ -1,0 +1,58 @@
+#footerLeft{
+  min-height: 50px;
+  max-width: 34%;
+  display: inline;
+}
+
+div#footerLeft{
+  padding-top: 10px;
+}
+
+#copywrite{
+  padding-top: 10px;
+  display: inline;
+  text-align: center;
+}
+
+#footer{
+  padding-top: 10px;
+  background-color: #000000;
+  min-height: 50px;
+  bottom:0;
+  width: 100%;
+  position: relative;
+  /*position:absolute;*/
+  /*background-image: url(/uploads/cartographer.png);*/
+}
+
+.footer-icons{
+  transform: translateY(-20%);
+}
+
+@media(max-width: 850px){
+  #footerLeft{
+    transform: translateY(-10%);
+  }
+}
+@media (min-width: 768px){
+   #footer{
+    height: 3em;
+    float: right;
+   } 
+}
+
+@media(max-width: 550px){
+  #footer i.fa{
+    font-size: 16px;
+  }
+  #copywrite{
+    font-size: 11px;
+  }
+  #footerLeft a{
+    display: none;
+  }
+  .footer-icons{
+    font-size: 16px;
+  }
+
+}

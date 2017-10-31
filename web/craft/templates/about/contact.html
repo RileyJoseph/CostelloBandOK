@@ -1,0 +1,42 @@
+{% extends "_layout" %}
+{% set title = "Contact" %}
+{% block content %}
+
+
+    {% include 'page-parts/nav.html' %}
+
+<div class="page-body">
+    {% include 'page-parts/side-bar-icons.html' %}
+   
+  <div class="col-md-12">
+    <!-- <h1 class="page-title">{{ entry.title }}</h1> -->
+    <h1 class="page-title"></h1>
+  </div> 
+
+
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-8 col-sm-12 contact">
+      <div class="col-md-6 col-sm-12 contactContentImg">
+        <img id="contactImg" src="{{ entry.featuredImage.first().url() }}">
+      </div>
+      <div class="col-md-6 col-sm-12 contactContent">
+        <p class="bold">Booking:</p>
+        <a href="mailto:{{ entry.bookingEmail}}">{{ entry.bookingEmail }}</a>
+        <p class="bold contact-header">Social:</p>
+        <p class="contact-body">{{ links.facebook }}</p>
+        <p class="contact-body">{{ links.instagram }}</p>
+        <p class="contact-body">{{ links.twitter }}</p>
+
+<!--         <p class="textRight bold">
+          <strong>Website:</strong>
+        </p>
+        <p class="textRight">
+          foxholepartnersok@gmail.com<br><br>
+        </p> -->
+      </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>
+{% endblock %}

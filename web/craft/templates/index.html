@@ -1,0 +1,39 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+
+<div id="musicBackground" ng-controller="HomeController">
+  <div id="musicTitleBar">
+        <p id="musicTitle2"><span style="letter-spacing:0;"></span></p>
+  </div>
+
+  <div id="sideBar">
+    <center>
+    <a href="{{ links.facebook }}"><i class="fa fa-facebook-square fa-3x"></i></a><br>
+    <a href="{{ links.instagram }}"><i class="fa fa-instagram fa-3x"></i></a><br>
+    <a href="{{ links.twitter }}"><i class="fa fa-twitter-square fa-3x"></i></a><br>
+    <a href="{{ links.youtubeChannel }}"><i class="fa fa-youtube-square fa-3x"></i></a><br>
+    <a href="{{ links.spotify }}"><i class="fa fa-spotify fa-3x"></i></a><br>
+    <!-- <a href="#"><i class="fa fa-soundcloud fa-3x"></i></a><br> -->
+    </center>
+  </div>
+  <!-- Landing - New Ablum Cover, Links -->
+  <div id="album">
+    <!-- <img id="musicAlbum" src="/uploads/conscioustrip.png"> -->
+{% include 'blocks/youtube.html' %}
+    
+    <div class="mainLinks">
+      <a class="links" href="http://www.costellobandok.bandcamp.com">Music</a>
+      <a class="links" href="/about/bio">Bio</a>
+      <a class="links" href="/about/contact">Contact</a>
+      <a class="links" href="/gallery">Gallery</a>
+    </div>
+  </div>
+</div>
+
+<div class="quote">
+  <!-- {{ globals.quote }} -->
+</div>
+
+{% endblock %}

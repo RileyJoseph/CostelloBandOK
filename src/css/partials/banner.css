@@ -1,0 +1,118 @@
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: black!important;
+}
+
+.navbar-toggle {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  border: none!important;
+}
+
+.nav-center{
+  text-align: center;
+}
+
+.nav-home{
+  text-decoration: none;
+}
+
+.nav-home:hover{
+  text-decoration: none;
+}
+
+.nav-home h1{
+  letter-spacing: 15px;
+}
+
+#bannerA:hover{
+    color: black;
+    background-color: transparent!important;
+    text-decoration: none;
+}
+
+#bannerA:visited{
+  text-decoration: none;
+}
+
+.bannerText{
+  font-size: 40px;
+  font-family: 'KeeponTruckin';
+  color: black;
+  height: 40px;
+  transform: translateY(-50%);
+}
+
+#bannerText{
+  font-size: 40px;
+  font-family: 'KeeponTruckin';
+  color: black;
+  height: 40px;
+  line-height: 75px;
+  display: inline;
+
+}
+
+a.bannerLinks {
+  text-align: right;
+  margin-right: 20px;
+  color: black;
+}
+
+#bannerText2{
+  font-size: 50px;
+  font-family: 'Majesti-Banner-Medium';
+  color: #bfbfbf;
+}
+
+p#bannerText2 {
+    padding-top: 5px;
+}
+
+#navLeft{
+  padding-left: 220px;
+}
+
+#navbar-toggle {
+  display: none!important;
+}
+
+@media (max-width: 766px){
+  #banner{
+    margin-top: 0px;
+    border-top: none;
+  }
+  .bannerText{
+    transform: translateY(50%)!important;
+    margin-top: 0px!important;
+  }
+  .navbar-toggle{
+    top: .8em;
+  }
+  .navbar-toggle:focus{
+    background-color: white;
+  }
+  .navbar-toggle:hover{
+    background-color: white!important;
+  }
+  #bannerLinks{
+    background-color: white;
+  }
+  .bannerLinks{
+    text-align: center!important;
+  }
+}
+
+@media (max-width: 550px){
+  .bannerLinks{
+    text-align: center!important;
+    line-height: 15vh!important;
+  }
+  .bannerLinks:hover{
+    text-decoration: underline!important;
+  }
+  .in{
+    height: 100vh;
+  }
+}

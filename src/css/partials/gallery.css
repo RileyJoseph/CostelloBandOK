@@ -1,0 +1,84 @@
+.gallery{
+  height: 500px;
+  padding-bottom: 100px;
+}
+
+.gallery-img{
+  width: 200px;
+  height: 280px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: 5px;
+}
+
+#galleryMain{
+  padding: 0px!important;
+  min-height: 200%!important;
+}
+
+
+.slick-carousel img{
+  /*left: 50%;*/
+  width: 100%;
+}
+
+.autoplay img{
+  width: 100%;
+}
+
+.subGallery {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.subGalleryLast{
+  margin-bottom: 150px!important;
+}
+
+.subGallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.subGallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.subGallery > div {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.subGallery > div:hover {
+  z-index: 1;
+}
+
+.subGallery > div:hover {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.galleryTitle{
+  font-family: 'KeeponTruckin';
+  font-size: 50px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
