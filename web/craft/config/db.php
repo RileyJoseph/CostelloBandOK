@@ -13,12 +13,14 @@ return array(
     'tablePrefix' => '',
     '*' => array(
         'server' => 'localhost',
+        'tablePrefix' => '',
         'user' => 'root',
         'password' => 'root',
         'database' => 'costello'
     ),
     '.com' => array(
         'server' => '127.0.0.1',
+        'tablePrefix' => '',
         'user' => 'costell4_craft',
         'password' => '9&()TVm_@Jtc',
         'database' => 'costell4_craft'
