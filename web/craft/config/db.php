@@ -24,7 +24,13 @@ return array(
 
     // The prefix to use when naming tables. This can be no more than 5 characters.
     'tablePrefix' => '',
-
+    '*' => array(
+        'server' => '127.0.0.1',
+        'tablePrefix' => '',
+        'user' => 'costell4_craft',
+        'password' => '9&()TVm_@Jtc',
+        'database' => 'costell4_craft'
+    ),
     '.dev' => array(
         'server' => 'localhost',
         'tablePrefix' => 'craft',
