@@ -605,6 +605,10 @@ p{
     box-shadow: none;
   }
 
+  .aboutBody{
+    padding-top: 50px;
+  }
+
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -642,8 +646,8 @@ p{
 
   .aboutBody{
     padding-top: 50px;
-    margin-left: 80px;
   }
+
 
   .aboutBody p{
     font-size: 30px;

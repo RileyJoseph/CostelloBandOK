@@ -3,6 +3,12 @@
   padding-bottom: 100px;
 }
 
+@media(max-device-width: 850px){
+  .gallery{
+    height: 700px;
+  }
+}
+
 .gallery-img{
   width: 200px;
   height: 280px;
