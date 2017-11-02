@@ -22,7 +22,10 @@
       </div>
       <div class="col-md-6 col-sm-12 contactContent">
         <p class="bold">Booking:</p>
-        <a href="mailto:{{ entry.bookingEmail}}">{{ entry.bookingEmail }}</a>
+        <a href="mailto:{{ entry.bookingEmail}}"><p>{{ entry.bookingEmail }}</p></a>
+        {% if entry.bookingEmailTwo | length %}
+        <a href="mailto:{{ entry.bookingEmailTwo}}"><p>{{ entry.bookingEmailTwo }}</p></a>
+        {% endif %}
         <p class="bold contact-header">Social:</p>
         <p class="contact-body">{{ links.facebook }}</p>
         <p class="contact-body">{{ links.instagram }}</p>
