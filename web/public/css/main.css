@@ -2523,6 +2523,10 @@ main{
     min-height: 94vh;
 }
 
+.button-label{
+  display: none;
+}
+
 .content{
     min-height: 80vh;
     margin-bottom: 3em;
@@ -2542,6 +2546,10 @@ main{
 
 .textRight{
   text-align: right;
+}
+
+li{
+  list-style: none;
 }
 
 h1 {
@@ -2814,6 +2822,10 @@ div#footerLeft{
   border: none!important;
 }
 
+.close{
+  opacity: 1!important;
+}
+
 .nav-center{
   text-align: center;
 }
@@ -2921,6 +2933,138 @@ p#bannerText2 {
   .in{
     height: 100vh;
   }
+}
+
+.nav-center{
+  width: 100%;
+}
+
+#primary-nav{
+  display: inline-block;
+  position: absolute;
+  right: 5em;
+  top: .75em;
+  padding: 15px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+  width: 35px;
+}
+
+@media(max-width: 700px){
+  #primary-nav{
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: .75em;
+  }
+}
+
+@media(max-width: 500px){
+  #primary-nav{
+    display: inline-block;
+    position: absolute;
+    right: .5em;
+    top: .75em;
+  }
+  .hamburger-box{
+    width: 20px;
+  }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    width: 25px;
+  }
+}
+
+#primary-nav:focus{
+  outline: none;
+}
+
+.bannerText{
+  text-align: center;
+  display: inline-block;
+}
+
+#overlay{
+  visibility: hidden;
+  opacity: 0;
+  overflow: scroll;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  transition: .4s linear all;
+}
+
+@media(max-width: 900px){
+  .nav-center{
+    height: 6em;
+  }
+}
+
+#overlay.show{
+  visibility: visible;
+  height: 100%!important;
+  opacity: 1;
+  transition: opacity .4s ease;
+}
+
+.nav-main {
+  padding-top: 3em;
+}
+
+.site-header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  padding: 0em 0em 1em 0em;
+  z-index: 200;
+  box-shadow: $default-box-shadow;
+
+  @include breakpoint($second-breakpoint) {
+    padding: .75em 1em;
+  }
+}
+
+@media print {
+
+  .site-header{
+    display: none;
+  }
+}
+
+.nav-main__list{
+  margin-top: 2em;
+  padding-left: 0px!important;
+}
+
+.nav-main__list-item:hover h2, .nav-main__list-item:hover .first{
+  color: #000000;
+}
+
+.nav-main__title{
+  font-weight: 500;
+  font-family: "museo",serif;
+}
+
+.nav-main__list-item{
+  text-align: center;
+}
+
+.nav-main__list-item li{
+  padding-bottom: .9em;
+  padding-top: .9em;
+  margin: 0px 1em;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.nav-main__list-item li:hover{
+  background-color: #000000;
+}
+
+.nav-main__list-item a{
+  text-decoration: none;
+  color: black;
 }
 
 /*CSS Variable declarations*/

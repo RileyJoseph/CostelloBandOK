@@ -1,0 +1,126 @@
+.nav-center{
+  width: 100%;
+}
+
+#primary-nav{
+  display: inline-block;
+  position: absolute;
+  right: 5em;
+  top: .75em;
+  padding: 15px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+  width: 35px;
+}
+
+@media(max-width: 700px){
+  #primary-nav{
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: .75em;
+  }
+}
+
+@media(max-width: 500px){
+  #primary-nav{
+    display: inline-block;
+    position: absolute;
+    right: .5em;
+    top: .75em;
+  }
+  .hamburger-box{
+    width: 20px;
+  }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    width: 25px;
+  }
+}
+
+
+
+#primary-nav:focus{
+  outline: none;
+}
+
+.bannerText{
+  text-align: center;
+  display: inline-block;
+}
+
+#overlay{
+  visibility: hidden;
+  opacity: 0;
+  overflow: scroll;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  transition: .4s linear all;
+}
+
+@media(max-width: 900px){
+  .nav-center{
+    height: 6em;
+  }
+}
+
+#overlay.show{
+  visibility: visible;
+  height: 100%!important;
+  opacity: 1;
+  transition: opacity .4s ease;
+}
+
+.nav-main {
+  padding-top: 3em;
+}
+
+.site-header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  padding: 0em 0em 1em 0em;
+  z-index: 200;
+  box-shadow: $default-box-shadow;
+
+  @include breakpoint($second-breakpoint) {
+    padding: .75em 1em;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.nav-main{  
+  &__list{
+    margin-top: 2em;
+    padding-left: 0px!important;
+  }
+  &__list-item:hover h2, &__list-item:hover .first{
+    color: #000000;
+  }
+  &__title{
+    font-weight: 500;
+    font-family: "museo",serif;
+  }
+  &__list-item{
+    text-align: center;
+    li{
+      padding-bottom: .9em;
+      padding-top: .9em;
+      margin: 0px 1em;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    li:hover{
+      background-color: #000000;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

@@ -10,6 +10,10 @@
   border: none!important;
 }
 
+.close{
+  opacity: 1!important;
+}
+
 .nav-center{
   text-align: center;
 }

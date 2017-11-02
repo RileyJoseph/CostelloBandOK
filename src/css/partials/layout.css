@@ -7,6 +7,10 @@ main{
     min-height: 94vh;
 }
 
+.button-label{
+  display: none;
+}
+
 .content{
     min-height: 80vh;
     margin-bottom: 3em;
@@ -26,6 +30,10 @@ main{
 
 .textRight{
   text-align: right;
+}
+
+li{
+  list-style: none;
 }
 
 

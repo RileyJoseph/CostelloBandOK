@@ -1,19 +1,37 @@
 <div id="banner" class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div id="cf" class="container-fluid">
-        <!-- <div class="navbar-header"> -->
-        <div>
-<!--         <div id="navLeft">
-          <a href="/" id="bannerA"><h1 class="bannerText" font-family="Majesti-Banner-Medium">COSTELLO</h1></a>
-        </div> -->
-        <div class="nav-center">
-          <a href="/" class="nav-home"><h1 class="bannerText" font-family="Majesti-Banner-Medium">COSTELLO</h1></a>
-        </div>
-          <button type="button" class="navbar-toggle" id="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-          </button>
-        </div>
+  <div class="nav-center">
+    <a href="/" class="nav-home"><h1 class="bannerText" font-family="Majesti-Banner-Medium">COSTELLO</h1></a>
+  </div>
+  <div id="overlay" class="overlay nav">
+    {% set entries = craft.entries.section().limit(null) %}
+    <section id="site-nav" tabindex="-1" class="site-nav-block full-nav-block" aria-hidden="true">
+      <nav id="nav-main" class="nav-main" role="navigation" aria-controlledby="nav-toggle">
+        <ul class="nav-main__list" role="menu">
+          {% nav entry in entries %}
+          <li role="menuitem" 
+              id="{{ entry.slug }}" 
+              class="bg-swap nav-main__list-item col {{ entry.slug }}">
+            <a href="{{ entry.url }}" class="nav-main__link">
+              <h2 class="nav-main__title">{{ entry.title }}</h2>
+            </a>
+          </li>
+          {% endnav %}
+        </ul>
+      </nav>
+    </section>
+    </div>
+    <button id="primary-nav" class="close hamburger hamburger--spin site-header__nav-toggle {% if alert.alertOnOff %} hamburger-alert {% endif %}" 
+      type="button"
+      aria-controls="nav-main"
+      aria-haspopup="true"
+      title="Toggle Navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner">
+          <span class="button-label">Toggle Menu Button</span>
+        </span>
+      </span>
+    </button>
+  </div>
 
         <div class="collapse navbar-collapse" id="bannerLinks">
             <ul class="nav navbar-nav navbar-right">

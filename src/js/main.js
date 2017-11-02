@@ -12,12 +12,15 @@ if (tld == 'dev') {
 // Site specific imports
 import './partials/jquery-global.js';
 import gallerySlide from './partials/slider.js';
-import openNav from './partials/nav.js';
+import startNav from './partials/startNav.js';
+
+// import openNav from './partials/nav.js';
 // import initNav from './partials/navigation.js';
 
 // Invoke imported funtions inside this IIFE
 (function() {
   // initNav();
-  openNav();
+  // openNav();
+  startNav();
   gallerySlide();
 })();

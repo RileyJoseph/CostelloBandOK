@@ -15,6 +15,7 @@
 @import 'partials/page.css';
 @import 'partials/footer.css';
 @import 'partials/banner.css';
+@import 'partials/nav.css';
 
 /*CSS Variable declarations*/
 :root {
