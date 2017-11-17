@@ -13,6 +13,7 @@
     {% include 'page-parts/nav.html' %}
     {% include 'page-parts/side-bar-icons.html' %}
 
+
 <!-- <h2 class="galleryTitle">{{ entry.title }}</h2> -->
       <h1 class="page-title"></h1>
 
@@ -22,7 +23,8 @@
 <div class="col-md-6 gallery">
   <div class="slick-carousel slider-for">
   {% for img in entry.carouselImages %}
-    <div><img src="{{ img.url() }}"></div>
+    {% set transformSlide= craft.imager.transformImage(img.url(), { height: 450, width: 700, jpegQuality: 100 }) %}
+    <div><img src="{{ transformSlide }}"></div>
   {% endfor %}
   </div>
 </div>
