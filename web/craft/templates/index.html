@@ -10,12 +10,24 @@
 
   <div id="sideBar">
     <center>
-    <a href="{{ links.facebook }}"><i class="fa fa-facebook-square fa-3x"></i></a><br>
-    <a href="{{ links.instagram }}"><i class="fa fa-instagram fa-3x"></i></a><br>
-    <a href="{{ links.twitter }}"><i class="fa fa-twitter-square fa-3x"></i></a><br>
-    <a href="{{ links.youtubeChannel }}"><i class="fa fa-youtube-square fa-3x"></i></a><br>
-    <!-- <a href="{{ links.spotify }}"><i class="fa fa-spotify fa-3x"></i></a><br> -->
-    <a href="{{ links.bandcamp }}"><i class="fa fa-bandcamp fa-3x"></i></a><br>
+      {% if links.facebook %}
+        <a href="{{ links.facebook }}"><i class="fa fa-facebook-square fa-3x"></i></a><br>
+      {% endif %}
+      {% if links.instagram %}
+        <a href="{{ links.instagram }}"><i class="fa fa-instagram fa-3x"></i></a><br>
+      {% endif %}
+      {% if links.twitter %}
+        <a href="{{ links.twitter }}"><i class="fa fa-twitter-square fa-3x"></i></a><br>
+      {% endif %}
+      {% if links.youtubeChannel %}
+        <a href="{{ links.youtubeChannel }}"><i class="fa fa-youtube-square fa-3x"></i></a><br>
+      {% endif %}
+      {% if links.spotify %}
+        <a href="{{ links.spotify }}"><i class="fa fa-spotify fa-3x"></i></a><br>
+      {% endif %}
+      {% if links.bandcamp %}
+        <a href="{{ links.bandcamp }}"><i class="fa fa-bandcamp fa-3x"></i></a><br>
+      {% endif%}
     </center>
   </div>
   <!-- Landing - New Ablum Cover, Links -->
